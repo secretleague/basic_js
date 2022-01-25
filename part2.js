@@ -5,12 +5,12 @@
  */
  
  let obj = { 
-  height: 10, 
-  width: 3,
+  height: 3, 
+  width: 2,
 }
 function calcSquare(obj) { 
   
-  if (obj.height == undefined || obj.width == undefined){
+  if (obj == undefined){
     return 0;
   }  else {
   return obj.height * obj.width;
@@ -40,8 +40,17 @@ console.log(greetings("Ivan"))
  * ex: sum([1,2,3]) => 6
  * return 0 if no value is given
  */
-// function sum(arr) {
-// }
+
+let arr = [1,2,3,4,1,3];
+
+function sum(arr) {
+ if (arr == undefined){
+   return 0;
+ } else {
+   return arr.reduce((sum, current) => sum + current);
+ }
+}
+console.log(sum(arr));
 
 module.exports = {
    calcSquare,
