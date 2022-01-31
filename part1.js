@@ -1,6 +1,6 @@
 /**
  * return square of a number ex: square(2) => 4
- * return 0 if no value is given
+ * return 0 if no value is undefined
  */
 
 
@@ -15,3 +15,4 @@ console.log(square(2));
 module.exports = {
   square
 }
+
