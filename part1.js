@@ -3,7 +3,10 @@
  * return 0 if no value is given
  */
 function square(num) {
+  if (num === undefined) return 0;
+   return num * num;
 }
+
 
 module.exports = {
   square
