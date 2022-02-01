@@ -4,8 +4,12 @@
  * return 0 if no value is given
  */
 
+
 function calcSquare(obj) {
+  if (typeof obj !== 'object' || !(obj.hasOwnProperty('height') && obj.hasOwnProperty('width'))) return 0;
+  return obj.height * obj.width;  
 }
+console.log(calcSquare({height: 3, width: 2}))
 
 /**
  * accepts string as name, and should return a string "Hello, " and a name value
@@ -13,6 +17,10 @@ function calcSquare(obj) {
  * return empty string if no value is given
  */
 function greetings(name) {
+  if (!typeof name === 'string') {
+    return '';
+  }
+  return name ? `Hello, ${name}` : '';
 }
 
 /**
@@ -21,6 +29,10 @@ function greetings(name) {
  * return 0 if no value is given
  */
 function sum(arr) {
+  if(!Array.isArray(arr) || arr.length === 0) {
+    return 0;
+  }
+  return arr.reduce((prev, curr) => prev + curr);
 }
 
  module.exports = {
