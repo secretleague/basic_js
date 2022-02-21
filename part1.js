@@ -3,8 +3,8 @@
  * return 0 if no value is undefined
  */
 function square(num) {
-  return num * num;
 }
+
 
 module.exports = {
   square
