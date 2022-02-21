@@ -2,5 +2,9 @@
   "devDependencies": {
     "jasmine": "^4.0.1"
   },
-  "scripts": { "test": "jasmine" }
+  "scripts": {
+    "part1": "jasmine ./spec/part1.spec.js",
+    "part2": "jasmine ./spec/part2.spec.js",
+    "part3": "jasmine ./spec/part3.spec.js"
+  }
 }
